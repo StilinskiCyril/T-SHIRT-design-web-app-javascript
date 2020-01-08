@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+    <script src="tweetshirt.js"></script>
+<!--    <script>-->
+<!--        //the on-loader handler-->
+<!--        window.onload = function() {-->
+<!--            //we are getting the reference to the canvas to draw-->
+<!--            var canvas = document.getElementById("tshirtCanvas");-->
+<!--            //we need a 2D context from the canvas to draw-->
+<!--            var context = canvas.getContext("2d");-->
+<!--            //we use the 2D context to draw a rectangle fill on the canvas-->
+<!--            context.fillRect(10, 10, 100, 100);-->
+<!--        };-->
+<!--    </script>-->
+</head>
+<body>
+<h1>TweetShirt</h1>
+    <canvas id="tshirtCanvas" width="600" height="200">
+        <p>Please upgrade your browser to use TweetShirt!</p>
+    </canvas>
+
+    <form action="">
+
+        <p>
+            <label for="backgroundColor">Select background color:</label>
+            <select id="backgroundColor">
+                <option value="white" selected="selected">White</option>
+                <option value="black">Black</option>
+            </select>
+        </p>
+        <p>
+            or white. Feel free to add your own
+            <label for="shape">Circles or squares?</label>
+            <select id="shape">
+                <option value="none" selected="selected">Neither</option>
+                <option value="circles">Circles</option>
+                <option value="squares">Squares</option>
+            </select>
+        </p>
+        <p>
+            <label for="foregroundColor">Select text color:</label>
+            <select id="foregroundColor">
+                <option value="black" selected="selected">Black</option>
+                <option value="white">White</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </p>
+        <p>
+            <label for="tweets">Pick a tweet:</label>
+            <select id="tweets">
+                <option value="Heloo Cyril is my username" selected="selected">1</option>
+                <option value="Hello, writing code is what i do for a living">2</option>
+            </select>
+        </p>
+        <p>
+            <input type="button" id="previewButton" value="Preview">
+        </p>
+    </form>
+<!--you can change "wickedsmartly" to yua twitter username-->
+<!--<script src="https://api.twitter.com/labs/1/tweets?ids=1067094924124872705&format=detailed">-->
+<!--</script>-->
+
+</body>
+</html>
